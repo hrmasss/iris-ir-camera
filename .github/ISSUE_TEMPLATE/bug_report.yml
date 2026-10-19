@@ -1,0 +1,33 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: input
+    id: device
+    attributes:
+      label: Phone and ROM
+      description: Model, ROM and Android version
+      placeholder: Poco F1, LineageOS 22, Android 15
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Iris version
+      description: Settings, About, Version
+      placeholder: 1.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: cameras
+    attributes:
+      label: Camera list
+      description: The cameras Iris shows in its camera list (list button at the top of the camera screen)
+      placeholder: "Camera 0, Back, Colour sensor\nCamera 5, Front, Not in the public camera list"
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what happened instead. Screenshots help.
+    validations:
+      required: true
